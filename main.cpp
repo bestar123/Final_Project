@@ -11,9 +11,6 @@
 player pl (X/2,Y/2);
 vector <zombies> zvec;
 
-
-zombies z(30, 30);
-
 int sp_key;				// special key
 int zom_num = 5;			// zombie number
 int delay = 1;
@@ -42,6 +39,7 @@ void grid() {
 	}
 	glEnd();
 }
+
 
 void processSpecialKeys(int key, int x, int y) {
 	switch (key) {
@@ -152,6 +150,8 @@ void idle() {
 	for (int i = 0; i < zvec.size(); i++) {
 		movezombie(zvec[i]);
 	}
+
+
 }
 
 void renderScene() {

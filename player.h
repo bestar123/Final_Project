@@ -24,6 +24,6 @@ public:
 	int ** area;
 	float ratio;
 
-	vector<int*> trace;
+	vector<vector<int>> trace;
 	vector<int*> boundary;
 };
